@@ -1,4 +1,5 @@
-userNumber = int(input("Enter an integer between 1 and 100: "))
+name = input("Hi, what is your name? ")
+userNumber = int(input(f"{name}, enter an integer between 1 and 100: "))
 
 if userNumber % 2 == 0:
     if 2 <= userNumber <= 24:
@@ -12,5 +13,3 @@ elif userNumber % 2 == 1:
         print(f"{userNumber} is odd and less than 60")
     elif userNumber > 60:
         print(f"{userNumber} is odd and greater than 60")
-# elif userNumber > 100:
-#     print("Must enter number 1 - 100")
